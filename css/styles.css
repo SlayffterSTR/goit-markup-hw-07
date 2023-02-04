@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: 'Roboto', 'Raleway';
   color: var(--primary-text);
   font-size: var(--primary-font-size);
   line-height: 1.5;
@@ -28,7 +28,7 @@ a {
 
 .logo {
   color: var(--primary-dark);
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-weight: 800px;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -147,7 +147,7 @@ a {
 .buttons-list {
   color: var(--brand-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--primary-font-size);
   line-height: 1.5;
 }
 
@@ -157,7 +157,7 @@ a {
   border: 1px solid;
   border-color: var(--secondary-buttons);
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--primary-font-size);
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -179,7 +179,7 @@ a {
 
 .cards-list {
   color: var(--primary-text);
-  font-size: 16px;
+  font-size: var(--primary-font-size);
   line-height: 1.5;
 }
 
