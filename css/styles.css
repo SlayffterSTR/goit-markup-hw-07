@@ -53,6 +53,7 @@ a {
 .contacts-list a:hover,
 .contacts-list a:focus {
   color: var(--brand-color);
+  outline: none;
 }
 
 .active-link a {
@@ -92,6 +93,7 @@ a {
 .main-section button:hover,
 .main-section button:focus {
   background-color: var(--active-state);
+  outline: none;
 }
 
 /* section 1 */
