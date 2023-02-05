@@ -9,32 +9,36 @@
 }
 
 body {
-  font-family: 'Roboto', 'Raleway', 'sans-serif';
+  font-family: "Roboto", "sans-serif";
   color: var(--primary-text);
   font-size: var(--primary-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-
-
-address{
+address {
   font-style: normal;
 }
 
-.link{
+.link {
   text-decoration: none;
 }
 
-.list{
+.list {
   list-style-type: none;
 }
+
+.visually-hidden{
+  display: none;
+}
+
+
 
 /* header */
 
 .logo {
   color: var(--primary-dark);
-  font-family: 'Raleway', 'sans-serif';
+  font-family: "Raleway", "sans-serif";
   font-weight: 800px;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -48,11 +52,9 @@ address{
 .navigation-list {
   font-weight: 500;
   font-size: var(--primary-font-size);
- 
 }
 
-
-.navigation-link{
+.navigation-link {
   color: var(--primary-dark);
 }
 
@@ -61,7 +63,6 @@ address{
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--brand-color);
-  outline: none;
 }
 
 .active-link {
@@ -86,7 +87,6 @@ address{
 .main-section-heading {
   text-align: center;
   color: #fff;
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
 }
@@ -105,7 +105,6 @@ address{
 .main-section-button:hover,
 .main-section-button:focus {
   background-color: var(--active-state);
-  outline: none;
 }
 
 /* section 1 */
@@ -121,7 +120,6 @@ address{
 
 .specification-section-header {
   color: var(--primary-dark);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.111;
 }
@@ -180,7 +178,6 @@ address{
 .buttons-list-item:focus {
   color: #fff;
   background-color: var(--brand-color);
-  outline: none;
 }
 
 .cards-list-heading {
@@ -190,12 +187,15 @@ address{
   line-height: 1.2;
 }
 
-.cards-list {
+
+
+.cards-list-item {
+  border: 1px solid var(--secondary-buttons);
+}
+
+.cards-list-text{
   color: var(--primary-text);
   font-size: var(--primary-font-size);
   line-height: 1.5;
 }
 
-.cards-list-item {
-  border: 1px solid var(--secondary-buttons);
-}
