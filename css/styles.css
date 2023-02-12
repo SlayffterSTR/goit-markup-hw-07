@@ -28,6 +28,10 @@ address {
   list-style-type: none;
 }
 
+.image{
+  display: block;
+}
+
 .visually-hidden {
   display: none;
 }
@@ -49,6 +53,8 @@ h6 {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+
 
 /* header */
 
@@ -137,6 +143,7 @@ h6 {
   font-size: 56px;
   line-height: 1.07;
   margin-bottom: 48px;
+  
 }
 
 .main-section-button {
@@ -150,6 +157,7 @@ h6 {
   font-size: var(--primary-font-size);
   line-height: 1.5;
   padding: 16px 32px;
+
 }
 
 .main-section-button:hover,
@@ -160,7 +168,9 @@ h6 {
 /* section 1 */
 
 .about-section {
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
 }
 
 .about-section-heading {
@@ -168,20 +178,27 @@ h6 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .about-list {
   display: flex;
   gap: 24px;
-  margin-bottom: 120px;
+  
 }
 
 .about-section-text-wrapper {
   width: 264px;
-  height: 104px;
+ 
 }
 
 /* section 2 */
+
+.specification-section{
+
+  padding-bottom: 120px;
+
+}
 
 .specification-section-header {
   color: var(--primary-dark);
@@ -194,7 +211,7 @@ h6 {
 .specification-list {
   display: flex;
   gap: 24px;
-  margin-bottom: 120px;
+ 
 }
 
 /* section 3 */
@@ -227,9 +244,19 @@ h6 {
 }
 
 .worker-item-text-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
+.worker-item-heading{
+  margin-bottom: 8px;
+}
 /* PORTFOLIO */
+
+.portfolio{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .buttons-list {
   color: var(--brand-color);
@@ -239,7 +266,7 @@ h6 {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: 96px 0 72px 0;
+  margin-bottom: 72px;
 }
 
 .buttons-list-item {
@@ -266,8 +293,8 @@ h6 {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 120px;
+  gap: 48px 24px;
+
 }
 
 .cards-item-text-wrapper {
@@ -286,7 +313,7 @@ h6 {
 }
 
 .cards-list-item {
-  margin-bottom: 48px;
+  
   width: 360px;
 }
 
@@ -300,9 +327,7 @@ h6 {
   line-height: 1.5;
 }
 
-.cards-item-image{
-  display: block;
-}
+
 
 /* footer */
 
@@ -312,11 +337,13 @@ h6 {
 }
 
 .footer-logo {
+  display: block;
   color: var(--backgound-light);
   text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.101;
+  margin-bottom: 16px;
 }
 
 .footer-text {
