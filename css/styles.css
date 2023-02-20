@@ -311,6 +311,7 @@ h6 {
 
 .worker-section-icons-list{
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
