@@ -503,6 +503,7 @@ h6 {
 .footer {
   background-color: var(--primary-dark);
   padding: 100px 0 100px 0;
+ 
 }
 
 .footer-container {
@@ -566,6 +567,75 @@ h6 {
   fill: var(--backgound-light);
 }
 
+
+/* FOOTER FORM */
+
+
+.footer-container-form{
+  margin-left: 80px;
+}
+
+.footer-container-form-title{
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-form{
+  display: flex;
+}
+
+.footer-form-input{
+  width: 264px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--primary-dark);
+  padding-left: 16px;
+
+  color: #fff;
+  outline: none;
+}
+
+.footer-form-input::placeholder{
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-button{
+  margin-left: 24px;
+  width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-color);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus{
+  background-color: var(--active-state);
+}
+
+
+.footer-form-button-text{
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+.footer-form-button-icon{
+
+}
+
+
+
 /* MODAL  */
 
 .backdrop{
@@ -605,6 +675,7 @@ h6 {
   border-radius: 4px;
   position: relative;
   transition: transform 250ms var(--timing-function);
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-button{
@@ -637,4 +708,151 @@ h6 {
 .modal-button-svg{
   width: 8px;
   height: 8px;
+}
+
+/* MODAL FORM */
+
+
+
+.modal-title{
+  font-weight: 500;
+	color: var(--primery-dark);
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: center;
+}
+
+.modal-form{
+
+}
+
+.modal-form-field{
+ 
+}
+
+.modal-form-label{
+  display: block;
+	margin-bottom: 4px;
+	font-size: 12px;
+	line-height: 1.166;
+	letter-spacing: 0.01em;
+	color: var(--icon-color);
+}
+
+.modal-form-container{
+  position: relative;
+}
+
+.modal-form-input {
+	width: 100%;
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding-left: 38px;
+
+	transition: border-color 250ms var(--timing-function);
+}
+
+.modal-form-input:focus {
+	outline: none;
+	border-color: var(--brand-color);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+	fill: var(--brand-color);
+}
+
+.modal-form-input.message {
+	height: 120px;
+	padding: 8px 16px;
+	resize: none;
+	font-size: 12px;
+	line-height: 1.166;
+	letter-spacing: 0.04em;
+}
+
+.modal-form-input.message::placeholder {
+	color: rgba(117, 117, 117, 0.5);
+}
+
+
+.modal-form-icon {
+	width: 18px;
+	height: 24px;
+	position: absolute;
+	left: 16px;
+	top: 8px;
+	fill: var(--primery-dark);
+
+	transition: fill 250ms var(--timing-function);
+}
+
+.modal-form-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--brand-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	width: 169px;
+	height: 56px;
+	margin: 0 auto;
+	color: #ffffff;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	font-family: inherit;
+	cursor: pointer;
+
+	transition: background-color 250ms var(--timing-function);
+}
+
+.modal-form-button:hover,
+.modal-form-button:focus {
+	background-color: var(--active-state);
+}
+
+.modal-form-field-cheсk {
+	margin-top: 16px;
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+
+	font-size: 12px;
+	line-height: 1.1666;
+	letter-spacing: 0.04em;
+	color: var(--modal-form-text);
+	cursor: pointer;
+}
+
+.modal-form-field-cheсk-input {
+	appearance: none;
+}
+
+.modal-form-field-cheсk-input:checked + .modal-form-field-cheсk-checkbox {
+	background: var(--active-state);
+	border: 1.25px solid var(--active-state);
+}
+
+.modal-form-field-cheсk-checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	border: 1.25px solid var(--primery-dark);
+	border-radius: 2px;
+	fill: #ffffff;
+}
+
+.modal-form-field-cheсk-icon {
+	width: 10px;
+	height: 8px;
+}
+.modal-form-field-cheсk-link {
+	color: var(--brand-color);
+	margin-left: 4px;
 }
