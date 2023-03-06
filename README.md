@@ -1,1 +1,1 @@
-https://slayffterstr.github.io/goit-markup-hw-04/
+https://slayffterstr.github.io/goit-markup-hw-06/
