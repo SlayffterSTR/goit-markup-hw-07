@@ -727,7 +727,7 @@ h6 {
 }
 
 .modal-form-field{
- 
+  margin-bottom: 8px;
 }
 
 .modal-form-label{
@@ -843,9 +843,18 @@ h6 {
 	width: 16px;
 	height: 16px;
 	margin-right: 8px;
-	border: 1.25px solid var(--primery-dark);
+	border: 1.25px solid var(--primary-dark);
 	border-radius: 2px;
 	fill: #ffffff;
+}
+
+.modal-form-field-cheсk-icon {
+	width: 10px;
+	height: 8px;
+}
+.modal-form-field-cheсk-link {
+	color: var(--brand-color);
+	margin-left: 4px;
 }
 
 .modal-form-field-cheсk-icon {
