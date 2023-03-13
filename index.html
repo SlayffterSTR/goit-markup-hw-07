@@ -59,6 +59,114 @@
           </ul>
         </address>
       </div>
+      
+      <div class="header-container-mobile container">
+        <nav class="header-container-mobile-nav">
+          <a href="./index.html" class="logo link">
+            <span class="logo-item">Web</span>Studio
+          </a>
+          <button
+            type="button"
+            class="header-container-mobile-button js-open-menu"
+          >
+            <svg class="header-container-mobile-icon">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <div class="header-container-mobile-burger js-menu-container">
+        <button
+          class="header-container-mobile-burger-button js-close-menu"
+        
+        >
+          <svg class="header-container-mobile-burger-button-svg">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="header-container-mobile-burger-nav-menu">
+          <ul class="header-container-mobile-burger-nav-list list">
+            <li>
+              <a
+                href="./index.html"
+                class="active-link-burger header-container-mobile-burger-nav-link link"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a
+                href="./portfolio.html"
+                class="header-container-mobile-burger-nav-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="" class="header-container-mobile-burger-nav-link link"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="container-social-contacts">
+          <address class="container-social-contacts-address">
+            <ul class="container-social-contacts-list list">
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="container-social-contacts-link link tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="container-social-contacts-link link email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div class="burger-social-container">
+            <ul class="burger-social-icons-list list">
+              <li>
+                <a class="burger-social-icons-link link" href="">
+                  <svg class="burger-social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a class="burger-social-icons-link link" href="">
+                  <svg class="burger-social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a class="burger-social-icons-link link" href="">
+                  <svg class="burger-social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a class="burger-social-icons-link link" href="">
+                  <svg class="burger-social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -87,7 +195,7 @@
                 </svg>
               </div>
               <h3 class="about-section-heading">Strategy</h3>
-              <p>
+              <p class="about-section-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -100,7 +208,7 @@
                 </svg>
               </div>
               <h3 class="about-section-heading">Punctuality</h3>
-              <p>
+              <p class="about-section-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -113,7 +221,7 @@
                 </svg>
               </div>
               <h3 class="about-section-heading">Diligence</h3>
-              <p>
+              <p class="about-section-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -126,7 +234,7 @@
                 </svg>
               </div>
               <h3 class="about-section-heading">Technologies</h3>
-              <p>
+              <p class="about-section-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -134,6 +242,9 @@
           </ul>
         </div>
       </section>
+
+
+
       <!-- Section-2 -->
 
       <section class="specification-section">
@@ -142,6 +253,7 @@
           <ul class="specification-list list">
             <li>
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="website on a computer"
                 width="360"
@@ -150,6 +262,7 @@
             </li>
             <li>
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="website on phone"
                 width="360"
@@ -158,6 +271,7 @@
             </li>
             <li>
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="website on phone and computer"
                 width="360"
@@ -176,6 +290,7 @@
           <ul class="workers-list list">
             <li class="worker-section-item">
               <img
+                srcset="./images/card1.jpg 1x, ./images/card1@2x.jpg 2x"
                 src="./images/card1.jpg"
                 alt="Mark Guerrero-Product Designer"
                 width="264"
@@ -223,6 +338,7 @@
 
             <li class="worker-section-item">
               <img
+              srcset="./images/card2.jpg 1x, ./images/card2@2x.jpg 2x"
                 src="./images/card2.jpg"
                 alt="Tom Ford-Frontend Developer"
                 width="264"
@@ -272,6 +388,7 @@
 
             <li class="worker-section-item">
               <img
+              srcset="./images/card3.jpg 1x, ./images/card3@2x.jpg 2x"
                 src="./images/card3.jpg"
                 alt="Camila Garcia-Marketing"
                 width="264"
@@ -320,6 +437,7 @@
 
             <li class="worker-section-item">
               <img
+              srcset="./images/card4.jpg 1x, ./images/card4@2x.jpg 2x"
                 src="./images/card4.jpg"
                 alt="Daniel Wilson-UI Designer"
                 width="264"
@@ -491,6 +609,7 @@
             </button>
           </form>
         </div>
+
       </div>
     </footer>
 
@@ -515,10 +634,7 @@
                 name="user-name"
               />
               <svg class="modal-form-icon">
-                <use
-                href="./images/icons.svg#icon-person-18dp"
-                
-              ></use>
+                <use href="./images/icons.svg#icon-person-18dp"></use>
               </svg>
             </div>
           </div>
@@ -534,8 +650,7 @@
                 name="phone"
               />
               <svg class="modal-form-icon">
-                <use
-                  href="./images/icons.svg#icon-phone-18dp"></use>
+                <use href="./images/icons.svg#icon-phone-18dp"></use>
               </svg>
             </div>
           </div>
@@ -551,8 +666,7 @@
                 name="email"
               />
               <svg class="modal-form-icon">
-                <use
-                  href="./images/icons.svg#icon-email-18dp"></use>
+                <use href="./images/icons.svg#icon-email-18dp"></use>
               </svg>
             </div>
           </div>
@@ -586,6 +700,14 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
