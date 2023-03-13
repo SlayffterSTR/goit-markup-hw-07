@@ -80,7 +80,7 @@ h6 {
   justify-content: space-between;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header-container {
     display: flex;
   }
@@ -111,11 +111,23 @@ h6 {
 
 .navigation-list {
   display: flex;
-  margin-left: 76px;
+
   gap: 40px;
 
   font-weight: 500;
   font-size: var(--primary-font-size);
+}
+
+@media (min-width: 768px) {
+  .navigation-list {
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation-list {
+    margin-left: 76px;
+  }
 }
 
 .navigation-link {
@@ -154,15 +166,36 @@ h6 {
 
 .contacts-list {
   display: flex;
-  gap: 40px;
+  /* gap: 40px; */
 
   color: var(--primary-text);
   font-size: var(--primary-font-size);
   transition: color 250ms var(--timing-function);
 }
 
+@media (max-width: 1200px) {
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
 .contacts-link {
   color: var(--primary-text);
+}
+
+@media (max-width: 1200px) {
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 /* mobile header */
@@ -171,7 +204,7 @@ h6 {
   padding: 24px 15px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header-container-mobile {
     display: none;
   }
@@ -426,10 +459,17 @@ h6 {
   margin-bottom: 72px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .main-section-heading {
     font-size: 56px;
     margin-bottom: 48px;
+    line-height: 1 7;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-section-heading {
+    margin-bottom: 40px;
   }
 }
 
@@ -468,13 +508,19 @@ h6 {
 
 .about-section-heading {
   color: var(--primary-dark);
-  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .about-section-heading {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -491,21 +537,33 @@ h6 {
 .about-list {
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .about-list {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
 }
 
-.about-section-text-wrapper:not(:last-child) {
-  margin-bottom: 72px;
+.about-section-text-wrapper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .about-section-text-wrapper {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section-text-wrapper:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 @media (min-width: 1200px) {
-  .about-section-text-wrapper:not(:last-child) {
-    margin-bottom: 0px;
+  .about-section-text-wrapper {
+    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -616,25 +674,18 @@ h6 {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.worker-section-item:not(:last-child) {
-  margin-bottom: 72px;
-}
-
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
   .worker-section-item:not(:last-child) {
-    margin-bottom: 0px;
+    margin-bottom: 72px;
   }
-
-  /* УДАЛИТЬ */
 }
 
-.workers-list {
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .workers-list {
-    gap: 24px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
   }
 }
 
@@ -720,18 +771,21 @@ h6 {
   justify-content: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .aside-section-list {
-    display: flex;
-
-    justify-content: center;
-    gap: 24px;
+    gap: 72px 24px;
   }
 }
 
 .aside-section-list-item {
-  width: 168px;
+  width: calc((100% - 16px) / 2);
   height: 88px;
+}
+
+@media (min-width: 768px) {
+  .aside-section-list-item {
+    width: 168px;
+  }
 }
 
 .aside-section-list-link {
@@ -761,8 +815,15 @@ h6 {
 /* PORTFOLIO */
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 1200px) {
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
 }
 
 .buttons-list {
@@ -771,9 +832,18 @@ h6 {
   font-size: var(--primary-font-size);
   line-height: 1.5;
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  padding-left: 16px;
+  gap: 16px 24px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .buttons-list {
+    gap: 24px;
+    margin-bottom: 72px;
+    justify-content: center;
+  }
 }
 
 .buttons-list-item {
@@ -788,11 +858,18 @@ h6 {
   cursor: pointer;
   border: 1px solid var(--secondary-buttons);
   border-radius: 4px;
-  padding: 12px 24px;
+
+  padding: 8px 16px;
   transition: color 250ms var(--timing-function),
     border-color 250ms var(--timing-function),
     background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
+}
+
+@media (min-width: 1200px) {
+  .buttons-list-item {
+    padding: 12px 24px;
+  }
 }
 
 .buttons-list-item:hover,
@@ -807,7 +884,13 @@ h6 {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 48px;
+}
+
+@media (min-width: 1200px) {
+  .cards-list {
+    gap: 48px 24px;
+  }
 }
 
 .cards-item-text-wrapper {
@@ -836,7 +919,13 @@ h6 {
 }
 
 .cards-list-item {
-  width: 360px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .cards-list-item {
+    width: 360px;
+  }
 }
 
 .cards-list-item:nth-child(n + 7) {
@@ -852,6 +941,16 @@ h6 {
 .cards-list-portfolio-thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-image {
+  width: 396px;
+}
+
+@media (min-width: 1200px) {
+  .portfolio-image {
+    width: 360px;
+  }
 }
 
 .cards-list-portfolio-thumb-overlay {
@@ -890,8 +989,21 @@ h6 {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
-  gap: 72px;
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 72px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:1199px) {
+  .footer-container {
+    gap: 72px 24px;
+    flex-wrap: wrap;
+    width: 552px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -902,15 +1014,22 @@ h6 {
   }
 }
 
-.footer-container-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.footer-container-logo{
+
 }
+
+@media (max-width: 767px) {
+  .footer-container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 @media (min-width: 1200px) {
   .footer-container-logo {
-    display: inline;
     margin-right: 120px;
   }
 }
@@ -927,6 +1046,7 @@ h6 {
   margin-top: 16px;
   color: var(--secondary-buttons);
   width: 264px;
+
 }
 
 .footer-container-subtitle {
@@ -938,10 +1058,14 @@ h6 {
   margin-bottom: 16px;
 }
 
+@media (max-width: 767px) {
+  .footer-container-subtitle {
+    text-align: center;
+  }
+}
+
 .footer-container-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ 
 }
 
 @media (min-width: 1200px) {
@@ -952,6 +1076,7 @@ h6 {
 
 .footer-container-list {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -981,9 +1106,16 @@ h6 {
 /* FOOTER FORM */
 
 .footer-container-form {
-  display: flex;
-  flex-direction: column;
+
 }
+
+@media (min-width: 768px) {
+  .footer-container-form {
+    
+  }
+}
+
+
 
 @media (min-width: 1200px) {
   .footer-container-form {
@@ -1000,7 +1132,7 @@ h6 {
   justify-content: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .footer-container-form-title {
     justify-content: left;
   }
@@ -1008,16 +1140,23 @@ h6 {
 
 .footer-form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
   .footer-form {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
+
+@media (min-width: 768px) {
+  .footer-form {
+    gap: 24px;
+  }
+}
+
+
 
 .footer-form-input {
   width: 100%;
@@ -1030,12 +1169,12 @@ h6 {
 
   color: #fff;
   outline: none;
-  margin-bottom: 16px;
+  
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .footer-form-input {
-    margin-bottom: 0px;
+    
     width: 264px;
   }
 }
@@ -1047,7 +1186,7 @@ h6 {
 }
 
 .footer-form-button {
-  margin-left: 0px;
+  padding: 8px 24px;
   width: 165px;
   height: 40px;
   display: flex;
@@ -1064,11 +1203,7 @@ h6 {
   background-color: var(--active-state);
 }
 
-@media (min-width: 1200px) {
-  .footer-form-button {
-    margin-left: 24px;
-  }
-}
+
 
 .footer-form-button-text {
   font-weight: 500;
